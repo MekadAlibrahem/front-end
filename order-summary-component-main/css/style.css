@@ -1,0 +1,174 @@
+@font-face{
+    font-family: 'RedHatDisplay-Black';
+    src: url(../../font/RedHatDisplay/RedHatDisplay-Black.ttf) format("truetype");
+}
+@font-face{
+    font-family: 'RedHatDisplay-Regular';
+    src: url(../../font/RedHatDisplay/RedHatDisplay-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: 'RedHatDisplay-Medium';
+    src: url(../../font/RedHatDisplay/RedHatDisplay-Medium.ttf) format("truetype");
+}
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+body{
+    font-family: 'RedHatDisplay-Black';
+    font-size: 16px;
+    font-weight: 900;
+    background-color: hsl(224 , 100% ,92% , 84%);
+    background-repeat: no-repeat;
+    
+    
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.order{
+  
+   border: white 1px solid;
+    border-radius: 5%  5%  5% 5%;
+    box-sizing:content-box;
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: white;
+    text-align: center;
+    max-width: 300px;
+    height: 50%;
+
+}
+
+.order > h3  , .order> p   , .btn {
+    padding:  1%;
+    margin:   1%;
+}
+.order > h3{
+    
+    font-size: x-large;
+    
+    
+}
+.order > p{
+   font-style: normal;
+   font-size: small;
+   font-family: "RedHatDisplay-Regular";
+   
+}
+.hero{
+    background-size: contain;
+    background-image: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    width:100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5%  5%  0 0;
+    margin-bottom: auto;
+   
+    
+}
+
+span{
+    display: inline-block;
+    float: left;
+}
+.musicicon{
+    
+    background-image: url(../images/icon-music.svg);
+    background-repeat: no-repeat;
+    width: 48px ;
+    height: 48px;
+}
+footer{
+    bottom: 10px;
+    width : 100% ;  
+    position: absolute;
+}
+.music {
+   display: inline-block;
+   background-color: hsl(225, 100%, 98%);
+   width: 90%;
+   border-radius: 3%;
+   font-size: small;
+}
+.music>span{
+   margin-left: 10px;
+    margin-top: 4%;
+    text-align: center;
+}
+.music >span:last-child{
+    bottom: 0px;
+    margin-top: 20px;
+    float: right;
+}
+
+.music >span>p:last-child{
+    font-family: "RedHatDisplay-Regular";
+    
+}
+.order>div:last-child{
+    
+    clear:both ;
+}
+.btn{
+    width:80% ;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    
+}
+.btn-defult{
+    border:none ;
+    background-color: inherit;
+    color: hsl(223, 47%, 23%);
+}
+.btn-primary{
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 6px  hsl(225deg , 100% , 94%);
+    color: white;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1440px){
+    /* Desktop style */
+    body{
+        font-weight: 700;
+        background-image: url(../images/pattern-background-desktop.svg) ;
+        
+    }
+ }@media (max-width: 800px){
+    /* mobile style  */
+    body{
+        font-weight:500 ;
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+    .order{
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+     }
+}
+
+ @media (max-width: 375px){
+    /* mobile style  */
+    body{
+        font-weight:500 ;
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+    .order{
+        margin-top: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
+        
+     }
+}
+ 
