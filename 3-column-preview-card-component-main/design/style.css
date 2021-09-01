@@ -21,7 +21,7 @@ body{
   clear: both;
   height: 20px;
   margin-top: 10%;
-  position: relative;
+  position:static;
   width: 100%;
   bottom: 0px;
   
@@ -69,8 +69,8 @@ button{
   color:  hsl(0, 0%, 95%);
   
   border-color: white ;
-  width: 70%;
-  border-radius: 35%;
+  width: 73%;
+  border-radius: 39%;
 
   
 }
@@ -98,7 +98,7 @@ p , h2{
   margin-bottom: 10px;
 }
 
-@media (max-width: 375px){
+@media (max-width: 400px){
   .column{
     display: block;
     width: 80%;
@@ -108,5 +108,18 @@ p , h2{
   }
   .column:last-child {
     border-radius: 0  0  10px 10px;
+  }
+  
+  #item3>button{
+    color : hsl(179, 100%, 13%);
+    background-color: white;
+  }
+  #item2>button{
+    color : hsl(184, 100%, 22%);
+    background-color: white;
+  }
+  #item1>button{
+    color: hsl(31, 77%, 52%);
+    background-color: white;
   }
 }
