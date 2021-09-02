@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../../font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0px; 
+    padding: 0px; 
+}
+body{
+    font-size: 15px; 
+    font-family: "Inter";
+}
+.main{
+    margin-left :  20% ;
+    margin-top  :  15% ;
+    min-width: 700px;
+    max-height: 260px;
+    border-radius: 1rem;
+    margin-right: 5%;
+   
+    background-color: hsl(244, 38%, 16%);
+}
+.main   , .content{
+    display: inline-block;
+    float: left;
+    max-width: 45%;
+    
+}
+.title ,main>p ,.info {
+    padding: 10px;
+    height: 30% ;
+    width:100% ;
+}
+.title , .content>p:last-child>span{
+    color: hsl(0, 0%, 100%);
+}
+.title>span{
+   color: hsl(277, 64%, 61%);
+}
+.info{
+   color : hsla(0, 0%, 100%, 0.75) ;
+}
+.imgview{
+    display: inline-block;
+    max-width: 273px;
+    min-height: 255px;
+    background-color:  hsl(233, 47%, 7%);
+    opacity: 0.2;
+    float: right;
+    background-image: url(../images/image-header-desktop.jpg);
+}
+.content>p>span{
+    position: relative;
+    bottom: -3rem;
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+   
+}
+.content>p>span>span{
+    color:  hsla(0, 0%, 100%, 0.6)
+}
+footer{
+    position: absolute; 
+    bottom: 0px;
+    width: 100% ;
+    height:30px ;
+    padding: 5px;
+    background-color: grey;
+    font-size: 30px;
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 1440px){
+    .main{
+        margin-left :  25% ;
+        margin-top  :  15% ;
+    }
+}
+@media (max-width : 950px){
+    .main {
+        margin-left :  15% ;
+        margin-top  :  15% ;
+
+    }
+}
+@media (max-width : 770px){
+    .main {
+        margin-left :  10% ;
+        margin-top  :  5% ;
+    }
+    
+}
+@media (max-width : 550px){
+    .main {
+        margin-left :  3% ;
+        margin-top  :  5% ;
+    }
+    
+}
+@media (max-width : 370px){
+    .main {
+        display: block;
+        margin-left :  2%  ;
+        margin-top  :  10% ;
+        min-width: 273px;
+        float: left;
+        overflow:hidden ;
+        min-height: 400rem;
+        overflow: hidden;  
+    }
+    .imgview , .content{
+        display: inline-block;
+        float: left;
+    }
+    .imgview{
+        background-image: url("../images/image-header-mobile.jpg");
+        display: block;
+    }
+    .content{
+        max-width:96% ;
+        padding: 1% ;
+        text-align:center   
+    }
+    .content>p:last-child>span{
+        margin-top: 5px ;
+        width :80% ;
+        position:static ;
+        text-align:center;
+        bottom :unset ;
+        margin: 0.5rem ;
+    }
+    footer{
+        bottom:-20px ;
+    }
+}
