@@ -112,7 +112,7 @@ footer{
         min-width: 273px;
         float: left;
         overflow:hidden ;
-        min-height: 400rem;
+        min-height: 47rem;
         overflow: hidden;  
     }
     .imgview , .content{
@@ -137,6 +137,6 @@ footer{
         margin: 0.5rem ;
     }
     footer{
-        bottom:-20px ;
+        bottom:0px ;
     }
 }
