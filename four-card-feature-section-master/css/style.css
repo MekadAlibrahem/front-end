@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Poppins-Medium" ;
+    src: url(../../font/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppins-Regular" ;
+    src: url(../../font/Poppins/Poppins-Regular.ttf);
+}
+body{
+    font-size: 15px;
+    font-family: "Poppins-Medium";
+    font-weight: 200;
+}
+.head{
+    text-align: center;
+   
+
+    margin-top: 10px;
+}
+.head>.row>.col-12>p {
+    margin-left: 12rem;
+    padding: 0px 11rem 0 0;
+
+}
+.head>.row>.col-12>h2 ,  .head>.row>.col-12>p ,.coustom-card>.card-body>.card-text {
+    font-family: "Poppins-Regular";
+}
+
+.coustom-card{
+    border-top: 5px solid  hsl(0, 78%, 62%);
+    border-radius: 0 0 3px 3px;
+    box-shadow:  0 0 20px  hsl(0deg 1% 52%);
+    
+}
+.coustom-card>.card-body>.card-title , .coustom-card>.card-body>.card-text  {
+    text-align: left !important;
+   
+}
+
+.card-1{
+    border-top: 5px solid  hsl(0, 78%, 62%) !important;
+}
+.card-2{
+    border-top: 5px solid hsl(34, 97%, 64%) !important;
+}
+
+.col-left , .col-right{
+    padding-top: 10%;
+}
+.col-left>.coustom-card {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.col-right>.coustom-card{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.col-center{
+    padding-top: 3%;
+    
+}
+.relative-bottom{
+    margin-top: 20px;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
