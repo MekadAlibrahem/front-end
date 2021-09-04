@@ -17,11 +17,7 @@ body{
 
     margin-top: 10px;
 }
-.head>.row>.col-12>p {
-    margin-left: 12rem;
-    padding: 0px 11rem 0 0;
 
-}
 .head>.row>.col-12>h2 ,  .head>.row>.col-12>p ,.coustom-card>.card-body>.card-text {
     font-family: "Poppins-Regular";
 }
