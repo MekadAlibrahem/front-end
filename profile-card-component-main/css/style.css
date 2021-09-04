@@ -7,7 +7,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     background-color: hsl(185, 75%, 39%);
-   
+    overflow :hidden ;
     
     
     
@@ -37,7 +37,7 @@ body{
     margin-top: 18%;
     margin-left: 5%;
     margin-right: 5%;
-   
+    
     position:absolute ;
     background-color: white;
     z-index: 10000;
