@@ -31,21 +31,37 @@
                $20/mo. thereafter </span>
           </h4>
         </div>
-        <form action="">
+        <form action="" class="needs-validation" novalidate>
           <div class="form-row form-card" >
             <div class="col-11">
-              <input type="text" class="form-control" name="firstname" id="firstname" required="" placeholder="First Name">
+              <label for="firstname"></label>
+              <input type="text" class="form-control" name="firstname" id="firstname" required  placeholder="First Name" >
+              <small id="firstname" class="invalid-feedback">
+                First name cannot be empty
+              </small>
             </div>
             <div class="col-11">
-              <input type="text" class="form-control" name="lasttname" id="lasttname" required="" placeholder="Last Name">
+              <label for="lasttname"></label>
+              <input type="text" class="form-control" name="lasttname" id="lasttname" required placeholder="Last Name"  >
+              <small id="lasttname" class="invalid-feedback">
+                Last name cannot be empty
+              </small>
             </div>
             <div class="col-11">
+              <label for="email"></label>
+              <input type="email" class="form-control" name="email" id="email" required placeholder="Email Address"  >
+              <small id="email" class="invalid-feedback">
+                Email Address cannot be empty
+              </small>
+            </div>
+            <div class="col-11">
+              <label for="password"></label>
+              <input type="password" class="form-control" name="password" id="password" required placeholder="password" >
+              <small id="password" class="invalid-feedback">
+                password cannot be empty
+              </small>
+            </div>
 
-              <input type="email" class="form-control" name="email" id="email" required="" placeholder="Email Address">
-            </div>
-            <div class="col-11">
-              <input type="password" class="form-control" name="password" id="password" required="" placeholder="password">
-            </div>
             
             <div class="col-12"> 
               <button type="submit"  class="btn btn-success btn-block btn-lg">
@@ -76,5 +92,24 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="../lib/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+  <script>
+    (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+  </script>
 </body>
 </html>
