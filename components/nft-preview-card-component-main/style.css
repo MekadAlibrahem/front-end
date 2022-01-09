@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap');
+
+
+/*  */
+:root{
+    --mainbgColor :hsl(217, 54%, 11%) ;
+    --cardbgColor : hsl(216, 50%, 16%) ;
+    --lineColor :hsl(215, 32%, 27%) ;
+    --SoftBlueColor : hsl(215, 51%, 70%) ;
+    --CyanColor: hsl(178, 100%, 50%) ;
+    --WhiteColor: hsl(0, 0%, 100%) ;
+}
+
+body{
+    font-family: 'Outfit', 'Work Sans', sans-serif;
+    font-weight: 300;
+    background-color: var(--mainbgColor);
+    
+
+    
+    
+}
+.card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   
+    width: 10%;
+    min-width:300px ;
+    padding-left: 25px ;
+    padding-right: 20px ;
+    background-color: var(--cardbgColor);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 600px;
+    justify-content: space-around;
+    color: var(--SoftBlueColor);
+    
+    
+    
+    
+}
+.card .img{
+    
+    text-align: center;
+    width: 100%;
+    
+    border-radius:15px;  
+    margin-bottom: 10px;
+}
+.card .img img{
+    max-height: 350px;
+    max-width:100%;
+    background-size: cover;  
+    border-radius:15px;  
+}
+.card h3{
+    text-align: left;
+    color: var(--WhiteColor);
+    
+}
+.card p {
+    width: 100%;
+    text-align: left;
+}
+.desc-card{
+    margin-top: 10px;
+    display: flex; 
+    justify-content: space-between;
+    
+    
+}
+.price {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    color:var(--CyanColor)
+    
+}
+.price img{
+    margin-right: 5px;
+}
+.tiemout{
+    display: flex;
+    align-items: center;
+}
+.card hr{
+    color: var(--lineColor);
+    width: 80%;
+   margin-left: 10%;
+ 
+}
+.card .user{
+    
+    display: flex; 
+    align-items: center;
+}
+.card .user img {
+    width: 25%;
+    margin-right: 5px;
+}
+.card .user p span{
+    cursor:pointer;
+    color: var(--WhiteColor);
+}
+.card .user p span:hover , .card h3:hover {
+    cursor:pointer;
+    color: var(--CyanColor);
+}
+.card .img img:hover{
+    cursor:pointer;
+    opacity: 0.3;
+}
+.card .img:hover{
+    background-color:  var(--CyanColor);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: 50%  50%;
+}
+@media (max-width:375px){
+    .card {
+        width: 80%;
+    }
+}
