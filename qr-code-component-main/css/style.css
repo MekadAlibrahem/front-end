@@ -81,12 +81,24 @@ footer{
     }
 }
 @media(max-width :  600px){
-    
+    .qr-card{
+         width: 70%;
+        height: 65vh;
+        padding: 10px 15px;
+    }
 }
 @media(max-width :  450px){
-    
+        .qr-card{
+         width: 70%;
+        height: 65vh;
+        padding: 10px 15px;
+    }
 }
 @media(max-width :  375px){
-
+.qr-card{
+         width: 70%;
+        height: 65vh;
+        padding: 10px 15px;
+    }
     
 }
