@@ -53,9 +53,10 @@ p{
 }
 
 footer{
-    background-color: gray;
+    
     position: absolute;
     bottom: 0px;
+    left : 0px;
     height: 30px;
     min-width: 100%;
     max-width: 100%;
